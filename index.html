@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grounded In Excellence supports individuals, organizations, and communities as they enact social justice principles in their lives, communities, and workplaces.">
+    <meta name="keywords" content="Grounded In Excellence, Grounded, Excellence, Social Justice, Community Events">
+    <meta name="author" content="Grounded In Excellence">
+    <meta http-equiv="refresh" content="30">
+    <title>Train4Treats</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1974bca5b.js" crossorigin="anonymous"></script>
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header" id="Header">
+        <div class="container">
+            <div class="header-box">
+                <h1>All Dogs Are Welcome</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, nihil repellendus ea totam consequuntur magni veniam debitis a tempore dolorum, soluta reprehenderit accusantium voluptatibus facere! Ipsum, fugiat.</p>
+                <a href="#Intro" class="btn-primary">Explore Now</a>
+            </div>
+        </div>
+    </header>
+    <!-- Bar -->
+    <div class="bar">
+        <div class="bar__content u-centered">
+            <img class="bar__logo" src="img/Train4treats logos-10 (1).png" alt="logo image">
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="material-icons">list</i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="#Header">Home</a>
+                <a class="nav__link" href="#Intro">Training</a>
+                <a class="nav__link" href="#Services">Treats</a>
+                <a class="nav__link" href="#Contact">Contact</a>
+                <a href="#" class="btn-primary">703.819.3630</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Javascript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver(entries => {
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 0.9)
+            }, {
+                threshold: 0.9
+            });
+            
+            observer.observe(document.querySelector(".header"));
+        });
+        </script>
+
+<!-- Intro Section -->
+<section class="intro" id="Intro">
+    <div class="container">
+        <h2>Training 4 Treats</h2>
+        <div class="intro-box">
+            <div class="intro-box-item">
+                <div class="intro-box-text">
+                    <h3>Dog Lover</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione sed omnis laborum. Quam qui debitis fugit quas dolore aliquid odio, ducimus aut numquam nulla! Consequatur a dolor hic autem ex.</p>
+                    <div class="intro-button">
+                        <a href="#Photos" class="btn-primary">View Gallery</a>
+                    </div>
+                </div>
+                <div class="intro-box-image">
+                    <img src="img/dog1.jpg" alt="image">
+                </div>
+            </div>
+            <div class="intro-box-item">
+                <div class="intro-box-text">
+                    <h3>Positive Obedience Training</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione sed omnis laborum. Quam qui debitis fugit quas dolore aliquid odio, ducimus aut numquam nulla! Consequatur a dolor hic autem ex.</p>
+                    <div class="intro-button">
+                        <a href="#Services" class="btn-primary">View Services</a>
+                    </div>
+                </div>
+                <div class="intro-box-image">
+                    <img src="img/dog7.jpg" alt="image">
+                </div>
+            </div>
+            <div class="intro-box-item">
+                <div class="intro-box-text">
+                    <h3>Healthy Homemade Treats</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione sed omnis laborum. Quam qui debitis fugit quas dolore aliquid odio, ducimus aut numquam nulla! Consequatur a dolor hic autem ex.</p>
+                    <div class="intro-button">
+                        <a href="#Services" class="btn-primary">View Treats</a>
+                    </div>
+                </div>
+                <div class="intro-box-image">
+                    <img src="img/dog9.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services" id="Services">
+    <div class="container">
+        <h2>Obedience & Homemade Treats</h2>
+        <div class="services-box">
+            <div class="services-training">
+                <div class="services-training-image">
+                    <img src="img/dog9.jpg" alt="image">
+                </div>
+                <div class="services-training-text">
+                    <h3>Obedience Training</h3>
+                    <h4>With Care & Positivity</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quae sint repellendus itaque atque perferendis vel ipsam eum? Obcaecati, ipsa!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quae sint repellendus itaque atque perferendis vel ipsam eum? Obcaecati, ipsa!</p>
+                    <div class="training-button-box">
+                        <h5>$100</h5>
+                        <a href="#Contact" class="btn-primary">Start Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="services-treats">
+                <div class="services-treats-item">
+                    <div class="services-treats-image">
+                        <img src="img/treats1.jpg" alt="image">
+                    </div>
+                    <div class="services-treats-text">
+                        <h3>Organic Treat</h3>
+                        <h4>With Positivity</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, id?</p>
+                        <div class="services-button-box">
+                            <h5>$10</h5>
+                            <a href="#Contact" class="btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-treats-item">
+                    <div class="services-treats-image">
+                        <img src="img/treats2.jpg" alt="image">
+                    </div>
+                    <div class="services-treats-text">
+                        <h3>Natural Treat</h3>
+                        <h4>With Care</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, id?</p>
+                        <div class="services-button-box">
+                            <h5>$10</h5>
+                            <a href="#Contact" class="btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-treats-item">
+                    <div class="services-treats-image">
+                        <img src="img/treats3.jpg" alt="image">
+                    </div>
+                    <div class="services-treats-text">
+                        <h3>Healthy Treat</h3>
+                        <h4>With Health</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, id?</p>
+                        <div class="services-button-box">
+                            <h5>$10</h5>
+                            <a href="#Contact" class="btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Photos Section -->
+<section class="photos" id="Photos">
+    <div class="photos-box">
+        <div class="photos-item">
+            <img src="img/dog6.jpg" alt="image">
+        </div>
+        <div class="photos-item">
+            <img src="img/dog2.jpg" alt="image">
+        </div>
+        <div class="photos-item">
+            <img src="img/dog10.jpg" alt="image">
+        </div>
+        <div class="photos-item">
+            <img src="img/dog5.jpg" alt="image">
+        </div>
+        <div class="photos-item">
+            <img src="img/dog1.jpg" alt="image">
+        </div>
+        <div class="photos-item">
+            <img src="img/dog4.jpg" alt="image">
+        </div>
+        <div class="photos-item">
+            <img src="img/dog9.jpg" alt="image">
+        </div>
+        <div class="photos-item">
+            <img src="img/dog2.jpg" alt="image">
+        </div>
+        <div class="photos-item">
+            <img src="img/dog7.jpg" alt="image">
+        </div>
+        <div class="photos-item">
+            <img src="img/dog3.jpg" alt="image">
+        </div>
+        <div class="photos-item">
+            <img src="img/dog4.jpg" alt="image">
+        </div>
+        <div class="photos-item">
+            <img src="img/dog8.jpg" alt="image">
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="Contact">
+    <div class="container">
+        <div class="contact-container">
+            <div class="contact-text">
+                <h2>Contact Our Team</h2>
+                <h4>Schedule An Appointment With Us!</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi saepe accusamus consequuntur accusantium aliquam repellendus pariatur, tempora voluptatibus facere. Consectetur.</p>
+            </div>
+            <div class="contact-box">
+                <form action="">
+                    <div class="contact-box1">
+                        <div class="contact-box1-item">
+                            <h5>First Name*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                    </div>
+                    <div class="contact-box2">
+                        <div class="contact-box2-item">
+                            <h5>Phone Number*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                        <div class="contact-box2-item">
+                            <h5>Email*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                    </div>
+                    <div class="contact-box3">
+                        <div class="contact-box3-item">
+                            <h5>Message*</h5>
+                            <textarea name="Message" id="" cols="30" rows="10" required></textarea>
+                        </div>
+                    </div>
+                    <div class="contact-box-submit">
+                        <div class="contact-button">
+                            <a href="#" class="btn-primary">Submit</a>
+                        </div>
+                        <!-- <input type="submit" value="" class="btn-primary"> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<section class="footer" id="Footer">
+    <div class="container">
+        <div class="footer-box">
+            <div class="footer-box-company">
+                <img src="img/Train4treats logos-10 (1).png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis culpa mollitia in illum, fuga similique est numquam, provident molestias cupiditate a. Itaque a accusantium ad dolores iusto corrupti tempora placeat, consequatur modi adipisci nobis exercitationem autem harum amet accusamus quia beatae officia, nulla ea culpa! Consectetur minima rem cupiditate ipsam.</p>
+                <p>Copyright © 2021 Train4Treats - All rights reserved.</p>
+            </div>
+            <div class="footer-box-links">
+                <h3>Site Map</h3>
+                <ul>
+                    <a href="#Header"><li>Home</li></a>
+                    <a href="#Intro"><li>Training</li></a>
+                    <a href="#Services"><li>Treats</li></a>
+                    <a href="#Contact"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="footer-box-socials">
+                <h3>Social Media</h3>
+                <a href="#"><li><i class="fab fa-instagram"></i></li></a>
+                <a href="#"><li><i class="fab fa-facebook-f"></i></li></a>
+                <a href="#"><li><i class="fab fa-twitter"></i></li></a>
+            </div>
+            <div class="footer-box-development">
+                <h3>Contact Info</h3>
+                <a href="tel:703-819-3630"><li>(703) 819 - 3630</li></a>
+                <a href="mailto:greta@train4treats.com"><li>greta@train4treats.com</li></a>
+                <a href="https://logo-genius.com/"><li>Developed By Logo Genius</li></a>
+            </div>
+        </div>
+    </div>
+</section>
+    
+</body>
+</html>
